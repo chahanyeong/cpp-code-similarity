@@ -75,11 +75,13 @@
 - neulab/codebert-cpp, microsoft/graphcodebert-base 각 180만 행으로 fine-tuning 완료.
 - 각 2Epoch, batch: train32 test4
 - 두 모델의 Prediction을 Hard Voting 해 Public Score 98.475 달성
-|    Model    | Public Score |
+
+
+|              Model              | Public Score |
 | :-------------------------------: | :--: |
-|     neulab/codebert-cpp     | 97.94 |
-|     microsoft/graphcodebert-base    | 98.15 |
-|     Ensemble-Hard Voting    | 98.475 |
+|       neulab/codebert-cpp       | 97.94 |
+|     microsoft/graphcodebert-base  | 98.15 |
+|       Ensemble-Hard Voting       | 98.475 |
 
 
 # 팀원
