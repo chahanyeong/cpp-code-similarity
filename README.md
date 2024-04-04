@@ -23,7 +23,8 @@
 └── sample_submission.csv
 ``` 
 
-- 대회 간단 소개
+- 대회 소개
+
 - 대회의 특징
 - 분석 순서도
 - 디렉토리 설정
@@ -40,7 +41,15 @@
 - 팀원
 
 
-![Untitled](https://i.imgur.com/0AVIRFa.png)
+# 대회 소개
+:link: [코드 유사성 판단 시즌2 AI 경진대회](https://dacon.io/competitions/official/236228/overview/description)
+
+# 팀이 바라본 대회의 핵심
+1. 모델 Input인 'C++ 코드파일'의 '최적화 클리닝'
+- ㅇㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴ
+
+
+
 
 # 개발내용
 
