@@ -6,22 +6,6 @@
 
 디렉토리는 코랩 환경이 아닌 데이콘에서 안내해준 사항을 바탕으로 최적화하였습니다.
 
-```bash
-├── data
-│   ├── new_dataset_0604
-│   ├── new_dataset_0607
-│   ├── graphcodebert
-│   └── codebert-cpp
-├── code
-├── code_submission_total.py
-├── code_submission_ensemble.py
-├── train_code
-│   │
-│   └── probelm 1 ~ 500
-│
-├── test.csv
-└── sample_submission.csv
-``` 
 
 - 대회 소개
 
@@ -48,9 +32,42 @@
 1. 모델 Input인 'C++ 코드파일'의 '최적화 클리닝'
    - C++코드에는 #include, #define, using 등 다양한 전처리기가 존재한다.
    - 이런 다양한 전처리기와 주석을 어떻게 제거 및 치환할지 특히 집중했다.
-2. '모델 훈련 데이터'를 얼마나 사용할 수 있는가
-   - 
 
+2. '모델 훈련 데이터'를 얼마나 '증강'할 수 있는가
+   - 비슷한 기존 대회와 비교하였을때 대체로 훈련데이터의 개수와 정확도는 비례하였다.
+   - 정해진 리소스 안에서 최대의 정확도를 내기위한 방법에 대해 연구했다.
+
+# 분석 과정
+![모델링 과정](https://github.com/chahanyeong/cpp-code-similarity/assets/152364900/513b5dcc-5f71-40a1-b384-53f8dc91a957)
+
+# 디렉토리
+```bash
+├── data
+│   ├── new_dataset_0604
+│   ├── new_dataset_0607
+│   ├── graphcodebert
+│   └── codebert-cpp
+├── code
+├── code_submission_total.py
+├── code_submission_ensemble.py
+├── train_code
+│   │
+│   └── probelm 1 ~ 500
+│
+├── test.csv
+└── sample_submission.csv
+``` 
+
+# Data Cleaning
+![코드 전처리기 예시](https://github.com/chahanyeong/cpp-code-similarity/assets/152364900/cb910f9b-1ad6-4cd7-b351-db370dba1d2b)
+- 다양한 전처리기 구문 처리
+  - #include, tie, ios 등은 단순 제거 시 분류 정확도를 높혀줌
+  - #define, #typedef, using 등은 코드 구문을 치환하는 역할을 하므로 단순제거 vs 정규연산자를 활용한 구문 치환으로 Score 비교(20000개 train sample 기준)
+
+|               Cleaning                | Method | Public Score |
+| :-------------------------------: | :----: | :--: |
+|     전처리기 구문 단순 제거      |  1  | 93.54 |
+|          제거 및 치환          |  2  | 92.26 |
 
 
 
