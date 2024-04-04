@@ -20,8 +20,24 @@
 │   └── probelm 1 ~ 500
 │
 ├── test.csv
-├── sample_submission.csv
+└── sample_submission.csv
 ``` 
+
+- 대회 간단 소개
+- 대회의 특징
+- 분석 순서도
+- 디렉토리 설정
+
+  
+- 클리닝
+- 모델 선택
+- 데이터 생성 과정
+- 파인튜닝
+- 앙상블 방식
+
+  
+- 발전 가능성
+- 팀원
 
 
 ![Untitled](https://i.imgur.com/0AVIRFa.png)
