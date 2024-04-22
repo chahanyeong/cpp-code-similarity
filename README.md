@@ -60,7 +60,7 @@
 
 ### Create Data
 - Colab A100 기준 최대 훈련 데이터 개수는 180만 행 이였다.(Colab pro+ 기준 셀 지속시간: 24시간)
-- 생성 가능한 데이터 행은 약 1억 2000개 였고 이 중 효율적인 Data sampling을 위해 두가지 방식을 비교하였다.
+- 생성 가능한 데이터 행은 약 1억 2000만개였고 이 중 효율적인 Data sampling을 위해 두가지 방식을 비교하였다.
 - Random sampling 채택
   - Positive pair -> Random sampling
   - Negative pair -> BM25plus 알고리즘 사용한 구성 vs Random sampling
